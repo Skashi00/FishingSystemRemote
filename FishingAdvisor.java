@@ -24,6 +24,13 @@ public class FishingAdvisor {
         return seasonMap.getOrDefault(month.toLowerCase(), null);
     }
 
+    public static String showFishingTips(String season) {
+        switch(season.toLowerCase()){
+            case "vinter" :
+            return "🎣 Vintertips: Prova  "
+        }
+    }
+
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> {
             // Skapa huvudfönster
